@@ -1,0 +1,9 @@
+# folders
+node_modules
+
+# compiled .ts target
+dist
+
+# just in case
+*.js
+*.js.map
