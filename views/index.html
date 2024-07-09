@@ -7,6 +7,64 @@
     <title>Server Manager</title>
 </head>
 <body>
-    
+    <div id="sidebar" class="sidebar">
+        <h1 class="header-reset fs-2 bg-light-grey text-center py-1">Saved Configs</h1>
+        <div class="spacer bg-light-grey"></div>
+    </div>
+    <div id="main" class="main">
+        <div class="main-content">
+            <h1 class="header-reset">Server Configuration</h1>
+            <form>
+                <h4 class="header-reset h4-style">Database Configuration</h4>
+                <div class="equal-column-container">
+                    <div class="input-column-container">
+                        <label for="filename" class="label-center">DB Username</label>
+                        <input type="text" id="filename" name="filename" placeholder="Site" class="p-1-input my-1 text-input">
+                    </div>
+                    <div class="input-column-container">
+                        <label for="filename" class="label-center">DB Password</label>
+                        <input type="text" id="filename" name="filename" placeholder="Port" class="p-1-input my-1 text-input">
+                    </div>
+                </div>
+                <div>
+                    <h4 class="header-reset h4-style">Site Configuration</h4>
+                </div>
+                <div class="equal-column-container">
+                    <div class="input-column-container">
+                        <label for="filename" class="label-center">Sitename</label>
+                        <input type="text" id="filename" name="filename" placeholder="Site" class="p-1-input my-1 text-input">
+                    </div>
+                    <div class="input-column-container">
+                        <label for="filename" class="label-center">Port</label>
+                        <input type="text" id="filename" name="filename" placeholder="Port" class="p-1-input my-1 text-input">
+                    </div>
+                </div>
+                <div class="equal-column-container">
+                    <div class="input-column-container">
+                        <label for="filename" class="label-center">Username</label>
+                        <input type="text" id="filename" name="filename" placeholder="Username" class="p-1-input my-1 text-input">
+                    </div>
+                    <div class="input-column-container">
+                        <label for="filename" class="label-center">Password</label>
+                        <input type="text" id="filename" name="filename" placeholder="Password" class="p-1-input my-1 text-input">
+                    </div>
+                </div>
+                <div class="my-full">
+                    <label for="filename">Upload Key</label>
+                    <input type="text" id="filename" name="filename" placeholder="Upload Key" class="p-1-input my-1 text-input full-width-input">
+                </div>
+                <div class="my-full">
+                    <label for="filename">Remote Repo</label>
+                    <input type="text" id="filename" name="filename" placeholder="URL" class="p-1-input my-1 text-input full-width-input">
+                </div>
+                <div class="my-full">
+                    <label for="filename">Local Path</label>
+                    <input type="text" id="filename" name="filename" placeholder="Directory Path" class="p-1-input my-1 text-input full-width-input">
+                </div>
+                <input type="submit" value="Run Server" class="p-1-input bg-green">
+                <input type="reset" value="Clear Form">
+            </form>
+        </div>
+    </div>
 </body>
 </html>
