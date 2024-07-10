@@ -27,6 +27,6 @@ app.on('ready', () => {
 });
 
 // form submission
-ipcMain.on('form-submission', (event, formData) => {
+ipcMain.on('submit-form', (event, formData) => {
     console.log(formData);
 });

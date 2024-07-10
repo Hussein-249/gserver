@@ -20,4 +20,6 @@ if (formElement) {
     
         ipcRenderer.send('submit-form', formData);
     });
+} else {
+    console.error('ID "config-form" not found.');
 }
