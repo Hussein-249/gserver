@@ -4,8 +4,9 @@ import * as path from 'path';
 let mainWindow: BrowserWindow | null;
 function createMainWindow() {
     mainWindow = new BrowserWindow({
-        width: 1080,
-        height: 720,
+        width: 800,
+        height: 600,
+        resizable: false,
         webPreferences: {
             nodeIntegration: true
         }
