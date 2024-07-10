@@ -1,4 +1,4 @@
-import { app, BrowserWindow, Menu, ipcMain} from 'electron';
+import { app, BrowserWindow, Menu, ipcMain, dialog} from 'electron';
 import * as path from 'path';
 
 let mainWindow: BrowserWindow | null;
@@ -27,5 +27,6 @@ app.on('ready', () => {
 });
 
 // form submission
-// ipcMain.on('form-submission', (event, data) => {
-// });
+ipcMain.on('form-submission', (event, formData) => {
+    console.log(formData);
+});
